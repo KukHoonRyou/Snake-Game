@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import About from './About.js'
 
 const GRID_SIZE = 20;
 const INIT_SNAKE = [[8, 8]];
@@ -87,6 +88,7 @@ const SnakeGame = () => {
 
   return (
     <div>
+      <About />
       {gameOver ? (
         <div>
           <h1>Game Over</h1>
